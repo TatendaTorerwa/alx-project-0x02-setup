@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Card from '../components/common/Card';
 import PostModal from '../components/common/PostModal';
+import Header from '../components/layout/Header';  // Import Header
 
 const HomePage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -19,6 +20,7 @@ const HomePage = () => {
 
   return (
     <div>
+      <Header />  {/* Add Header component */}
       <h1>Welcome to the Home Page</h1>
       <button onClick={handleOpenModal}>Add New Post</button>
       <PostModal isOpen={isModalOpen} onClose={handleCloseModal} onSubmit={handleAddPost} />

@@ -1,19 +1,21 @@
 import Link from 'next/link';
+import React from 'react';
 
-const Header: React.FC = () => {
+const Header = () => {
   return (
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <Link href="/home">Home</Link>
-          </li>
-          <li>
-            <Link href="/about">About</Link>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <nav>
+      <ul>
+        <li>
+          <Link href="/home">Home</Link>
+        </li>
+        <li>
+          <Link href="/about">About</Link>
+        </li>
+        <li>
+          <Link href="/posts">Posts</Link>
+        </li>
+      </ul>
+    </nav>
   );
 };
 

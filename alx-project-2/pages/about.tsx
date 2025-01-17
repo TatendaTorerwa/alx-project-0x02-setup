@@ -1,9 +1,11 @@
 import React from 'react';
 import Button from '../components/common/Button';
+import Header from '../components/layout/Header';  // Import Header
 
 const AboutPage = () => {
   return (
     <div>
+      <Header />  {/* Add Header component */}
       <h1>About Page</h1>
       <Button size="small" shape="rounded-sm">Small Button</Button>
       <Button size="medium" shape="rounded-md">Medium Button</Button>
